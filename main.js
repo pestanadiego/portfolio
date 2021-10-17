@@ -10,18 +10,18 @@ const form = document.querySelector('.form');
 menu.addEventListener('click', () => {
     if(headerNav.className === '') {
         headerNav.className += 'responsive';
-        menu.src = '/img/menu-up.svg';
+        menu.src = './img/menu-up.svg';
     } else {
         headerNav.className = '';
-        menu.src = '/img/menu.svg';
+        menu.src = './img/menu.svg';
     };
 });
 
 // Implementation of the carousel (hero)
 const carousel = [
-    '/img/carousel/1.jpg',
-    '/img/carousel/2.jpg',
-    '/img/carousel/3.jpg'
+    './img/carousel/1.jpg',
+    './img/carousel/2.jpg',
+    './img/carousel/3.jpg'
 ];
 let arrayIndex = 1;
 
