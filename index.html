@@ -13,10 +13,10 @@
             <nav>
                 <h1><a href="">Diego Pestana</a></h1>
                 <ul>
-                    <li><a href="">Experience</a></li>
-                    <li><a href="">About me</a></li>
-                    <li><a href="">Skills</a></li>
-                    <li><a href="">Contact me</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#about-me">About me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact-me">Contact me</a></li>
                 </ul>
                 <img class="menu-icon" src="/img/menu.svg" alt="menu">
             </nav>
@@ -30,7 +30,7 @@
             </div>
         </div>
 
-        <section class="experience-section">
+        <section class="experience-section" id="experience">
             <h1 class="title-section">Experiencia</h1>
             <div class="experience">
                 <div class="experience-item">
@@ -74,7 +74,7 @@
             </div>
         </section>
 
-        <section class="about-me-section">
+        <section class="about-me-section" id="about-me">
             <h1 class="title-section">About me</h1>
             <div class="about-me">
                 <div class="info-me">
@@ -94,12 +94,51 @@
             </div>
         </section>
 
-        <section class="skills-section">
+        <section class="skills-section" id="skills">
             <h1 class="title-section">Skills</h1>
             <div class="skills">
                 
             </div>
         </section>
+
+        <section class="contact-me-section" id="contact-me">
+            <h1 class="title-section">Contact me</h1>
+            <div class="contact-me">
+                <div class="form-box">
+                    <h2>¡Envíame un mensaje!</h2>
+                    <form class="form">
+                        <label for="name">Nombre:</label>
+                        <br>
+                        <input type="text" id="name" name="name" required>
+                        <br>
+                        <label for="surname">Apellido:</label>
+                        <br>
+                        <input type="text" id="surname" name="surname" required>
+                        <br>
+                        <label for="email">Correo electrónico:</label>
+                        <br>
+                        <input type="text" name="email" id="email" minlength="12">
+                        <br>
+                        <label for="message">Mensaje:</label>
+                        <br>
+                        <input type="textarea" class="message" name="message" id="message" required>
+                        <br>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Reestablecer">
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h2>Comunícate conmigo a través de: </h2>
+                    <p><span>Teléfono:</span> <a target="_blank" href="https://wa.me/584129702560">+58 412-970-2560</a></p>
+                    <p><span>Correo:</span> pestanadiegoalberto@gmail.com</p>
+                    <p><span>LinkedIn:</span> <a target="_blank" href="https://www.linkedin.com/in/diego-pestana-b487a0160/">Diego Pestana</a></p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>© Diego Pestana. 2021</p>
+        </footer>
     </div>
 
     <script src="main.js"></script>

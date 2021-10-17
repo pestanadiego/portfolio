@@ -4,6 +4,7 @@ const imageHero = document.querySelector('.hero-image');
 const buttonHeroLeft = document.querySelector('.button-left');
 const buttonHeroRight = document.querySelector('.button-right');
 const skillsBlock = document.querySelector('.skills');
+const form = document.querySelector('.form');
 
 // Everytime the icon menu is clicked, the navigation links will pop up
 menu.addEventListener('click', () => {
@@ -106,3 +107,17 @@ function showSkills(skills) {
     }
 }
 
+// Form action
+form.addEventListener('submit', () => {
+        if(!(email.value.includes('@'))) {
+            alert('Uno de sus datos no ha sido ingresado correctamente. Inténtelo de nuevo');
+        } else {
+            console.log(`
+            Nombre: ${form.elements['name'].value}
+            Apellido: ${surname.value}
+            Correo electrónico: ${email.value}
+            Mensaje: ${message.value}
+            `);
+            alert('Su solicitud ha sido enviada');
+        }
+});

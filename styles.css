@@ -172,6 +172,7 @@ li a {
     display: flex;
     justify-content: space-evenly;
     height: 100%;
+    margin-bottom: 20px;
 }
 
 .skill-item {
@@ -203,6 +204,65 @@ li a {
 
 .skill-item h2 {
     padding-top: 20px;
+}
+
+.contact-me {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    margin-top: 20px;
+}
+
+.form-box {
+    width: 50%;
+    padding: 20px;
+}
+
+.form-box h2 {
+    margin-bottom: 10px;
+}
+
+.form-box label {
+    margin: 5px 0;
+}
+
+.form-box input {
+    margin: 10px 0;
+    width: 60%;
+}
+
+.form-box .message {
+    height: 70px;
+}
+
+.contact-info {
+    padding: 20px;
+}
+
+.contact-info h2 {
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    padding: 20px 0;
+}
+
+.contact-info p span {
+    font-weight: bold;
+}
+
+.contact-info p a {
+    color: blue;
+    text-decoration: none;
+}
+
+footer {
+    background-color: grey;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    padding: 20px;
 }
 
 @media (max-width: 650px) {
@@ -240,5 +300,15 @@ li a {
 
     .about-me {
         flex-wrap: wrap-reverse;
+    }
+}
+
+@media (max-width: 930px) {
+    .form-box {
+        width: 100%;
+    }
+
+    .form-box input {
+        width: 80%;
     }
 }
