@@ -1,8 +1,8 @@
 * {margin: 0; padding: 0;}
 
 body {
-    background-color: #f3f3f3;
-    font-family: sans-serif;
+    background-color: #e6e6e6;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .container {
@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background-color: grey;
+    background-color: #ffffff;
 }
 
 nav {
@@ -22,12 +22,11 @@ nav {
 
 h1 {
     padding: 20px;
-    cursor: pointer;
 }
 
 h1 a {
     text-decoration: none;
-    color: black;
+    color: #00E6BA;
 }
 
 ul {
@@ -42,7 +41,7 @@ li {
 
 li a {
     text-decoration: none;
-    color: black;
+    color: rgb(43, 43, 43);
     cursor: pointer;
 }
 
@@ -70,21 +69,29 @@ li a {
 }
 
 .hero .buttons button {
-    border: 2px black solid;
+    border: 2px #FFFFFF solid;
     background-color: transparent;
-    padding: 10px;
+    padding: 15px;
     cursor: pointer;
     border-radius: 100%; 
+    margin: 30px;
 }
 
 .experience-section {
     width: 100%;
     margin: 20px 0;
+    color:rgb(43, 43, 43);
 }
 
 .title-section {
     text-align: center;
     font-size: 3em;
+}
+
+.p-section {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 20px;
 }
 
 .experience {
@@ -100,7 +107,8 @@ li a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 2px black solid;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 5px;
     margin: 20px;
 }
 
@@ -123,13 +131,23 @@ li a {
 }
 
 .technology-used h3 {
+    text-align: center;
     padding: 20px;
 }
 
 .technology-used ul {
-    list-style: circle;
+    list-style: none;
     justify-content: space-around;
     width: 100%;
+}
+
+.technology-used ul li::before {
+    content: "\2713";
+    color: #00E6BA; 
+    font-weight: bold; 
+    display: inline-block;
+    width: 1em; 
+    margin-left: -1em; 
 }
 
 .technology-used li {
@@ -146,6 +164,8 @@ li a {
 .about-me-section {
     width: 100%;
     margin: 20px 0;
+    background-color: rgb(43, 43, 43);
+    color: #FFFFFF;
 }
 
 .about-me {
@@ -154,35 +174,48 @@ li a {
 
 .about-me img {
     width: 50%;
+    height: 100vh;
 }
 
 .info-me {
-    background-color: gray;
     color: white;
-    font-size: 1.5em;
+    font-size: 1.3em;
     padding: 20px;
 }
 
+.info-me span {
+    color: #00E6BA;
+}
+
 .info-me h1 {
-    font-size: 2em;
+    font-size: 3em;
     text-align: center;
+}
+
+.skills-section {
+    color: rgb(43, 43, 43);
+    margin: 20px 0;
 }
 
 .skills {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     height: 100%;
     margin-bottom: 20px;
 }
 
 .skill-item {
     background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     height: 300px;
-    width: 150px;
+    width: 250px;
+    margin: 10px;
 }
 
 .progress {
@@ -195,7 +228,7 @@ li a {
 .sp {
     width: 30px;
     height: 1%;
-    background-color: blue;
+    background-color: #00E6BA;
 }
 
 .skill-item p {
@@ -203,31 +236,106 @@ li a {
 }
 
 .skill-item h2 {
-    padding-top: 20px;
+    padding: 20px 0;
+}
+
+.contact-me-section {
+    background-color: rgb(43, 43, 43);
+    color: #FFFFFF;
+}
+
+.contact-me-section h1 {
+    padding-top: 60px;
 }
 
 .contact-me {
     display: flex;
     flex-wrap: wrap-reverse;
-    margin-top: 20px;
+    margin: 20px 0;
 }
 
 .form-box {
     width: 50%;
-    padding: 20px;
+    padding: 40px;
 }
 
 .form-box h2 {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .form-box label {
     margin: 5px 0;
 }
 
-.form-box input {
+.form-box input[type=text] {
     margin: 10px 0;
     width: 60%;
+    background-color: #FFFFFF;
+    border: 1px rgb(27, 27, 27) solid;
+    border-radius: 2.5px;
+    outline: none;
+    padding: 10px 20px;
+}
+
+.form-box input[type=textarea] {
+    margin: 10px 0;
+    width: 60%;
+    background-color: #FFFFFF;
+    border: 1px rgb(27, 27, 27) solid;
+    border-radius: 2.5px;
+    outline: none;
+    padding: 10px 20px;
+}
+
+.form-box input[type=textarea]:focus {
+    border: 1.5px #00E6BA solid;
+}
+
+.form-box input[type=text]:focus {
+    border: 1.5px #00E6BA solid;
+}
+
+.form-box input[type=submit] {
+    background-color: #00E6BA;
+    color: #FFFFFF;
+    padding: 10px;
+    width: 20%;
+    border: none;
+    border-radius: 2.5px;
+    cursor: pointer;
+    transition: all 250ms ease;
+    font-family: 'Montserrat';
+    margin-right: 5px;
+}
+
+.form-box input[type=reset] {
+    background-color: #00E6BA;
+    color: #FFFFFF;
+    padding: 10px;
+    width: 20%;
+    border: none;
+    border-radius: 2.5px;
+    cursor: pointer;
+    transition: all 250ms ease;
+    font-family: 'Montserrat';
+}
+
+.form-box input[type=submit]:hover {
+    background-color: #00b493;
+}
+
+.form-box input[type=reset]:hover {
+    background-color: #00b493;
+}
+
+.form-box input[type=submit]:active {
+    background-color: #019278;
+    padding: 9.5px;
+}
+
+.form-box input[type=reset]:active {
+    background-color: #019278;
+    padding: 9.5px;
 }
 
 .form-box .message {
@@ -235,7 +343,7 @@ li a {
 }
 
 .contact-info {
-    padding: 20px;
+    padding: 40px;
 }
 
 .contact-info h2 {
@@ -251,12 +359,16 @@ li a {
 }
 
 .contact-info p a {
-    color: blue;
+    color: #00E6BA;
     text-decoration: none;
 }
 
+.contact-info p a:hover {
+    color: #00b493;
+}
+
 footer {
-    background-color: grey;
+    background-color: rgb(27, 27, 27);
     color: white;
     text-align: center;
 }
@@ -285,7 +397,7 @@ footer p {
         flex-direction: column;
         align-items: flex-start;
         width: 100%;
-        background-color: rgb(172, 172, 172);
+        background-color: #e6e6e6;
     }
     
     .responsive .menu-icon {
@@ -301,11 +413,16 @@ footer p {
     .about-me {
         flex-wrap: wrap-reverse;
     }
+
+    .info-me {
+        padding-bottom: 100px;
+    }
 }
 
 @media (max-width: 930px) {
     .form-box {
         width: 100%;
+        padding-top: 0px;
     }
 
     .form-box input {
