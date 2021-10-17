@@ -82,7 +82,7 @@ li a {
     margin: 20px 0;
 }
 
-.experience-section h1 {
+.title-section {
     text-align: center;
     font-size: 3em;
 }
@@ -148,11 +148,6 @@ li a {
     margin: 20px 0;
 }
 
-.about-me-section h1 {
-    text-align: center;
-    font-size: 3em;
-}
-
 .about-me {
     display: flex;
 }
@@ -170,6 +165,44 @@ li a {
 
 .info-me h1 {
     font-size: 2em;
+    text-align: center;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.skill-item {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+    width: 150px;
+}
+
+.progress {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.sp {
+    width: 30px;
+    height: 1%;
+    background-color: blue;
+}
+
+.skill-item p {
+    padding-top: 20px;
+}
+
+.skill-item h2 {
+    padding-top: 20px;
 }
 
 @media (max-width: 650px) {
