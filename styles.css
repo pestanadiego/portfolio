@@ -75,7 +75,6 @@ li a {
     padding: 10px;
     cursor: pointer;
     border-radius: 100%; 
-
 }
 
 .experience-section {
@@ -86,7 +85,6 @@ li a {
 .experience-section h1 {
     text-align: center;
     font-size: 3em;
-    
 }
 
 .experience {
@@ -94,7 +92,6 @@ li a {
     align-items: flex-start;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    
 }
 
 .experience-item {
@@ -146,6 +143,35 @@ li a {
     padding: 20px 0;
 }
 
+.about-me-section {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.about-me-section h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+.about-me {
+    display: flex;
+}
+
+.about-me img {
+    width: 50%;
+}
+
+.info-me {
+    background-color: gray;
+    color: white;
+    font-size: 1.5em;
+    padding: 20px;
+}
+
+.info-me h1 {
+    font-size: 2em;
+}
+
 @media (max-width: 650px) {
     header ul {
         display: none;
@@ -172,5 +198,14 @@ li a {
     .responsive .menu-icon {
         transition: all ease;
     }
+}
 
+@media (max-width: 800px) {
+    .about-me img {
+        width: 100%;
+    }
+
+    .about-me {
+        flex-wrap: wrap-reverse;
+    }
 }
