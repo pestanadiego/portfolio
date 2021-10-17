@@ -78,8 +78,76 @@ li a {
 
 }
 
+.experience-section {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.experience-section h1 {
+    text-align: center;
+    font-size: 3em;
+    
+}
+
+.experience {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+
+.experience-item {
+    background-color: white;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px black solid;
+    margin: 20px;
+}
+
+.experience-item h1 {
+    text-align: center;
+    font-size: 2em;
+}
+
+.experience-image {
+    width: 400px;
+    height: 300px;
+}
+
+.experience-item p {
+    padding: 20px;
+}
+
+.experience-item p span {
+    font-weight: bold;
+}
+
+.technology-used h3 {
+    padding: 20px;
+}
+
+.technology-used ul {
+    list-style: circle;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.technology-used li {
+    padding: 10px;
+}
+
+.experience-item button {
+    border: none;
+    background-color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
 @media (max-width: 650px) {
-    ul {
+    header ul {
         display: none;
     }
 
