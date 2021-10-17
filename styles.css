@@ -269,7 +269,7 @@ li a {
 
 .form-box input[type=text] {
     margin: 10px 0;
-    width: 60%;
+    width: 56%;
     background-color: #FFFFFF;
     border: 1px rgb(27, 27, 27) solid;
     border-radius: 2.5px;
@@ -279,7 +279,7 @@ li a {
 
 .form-box input[type=textarea] {
     margin: 10px 0;
-    width: 60%;
+    width: 56%;
     background-color: #FFFFFF;
     border: 1px rgb(27, 27, 27) solid;
     border-radius: 2.5px;
@@ -299,7 +299,7 @@ li a {
     background-color: #00E6BA;
     color: #FFFFFF;
     padding: 10px;
-    width: 20%;
+    width: 30%;
     border: none;
     border-radius: 2.5px;
     cursor: pointer;
@@ -312,7 +312,7 @@ li a {
     background-color: #00E6BA;
     color: #FFFFFF;
     padding: 10px;
-    width: 20%;
+    width: 30%;
     border: none;
     border-radius: 2.5px;
     cursor: pointer;
@@ -425,7 +425,11 @@ footer p {
         padding-top: 0px;
     }
 
-    .form-box input {
+    .form-box input[type=text] {
+        width: 80%;
+    }
+
+    .form-box input[type=textarea] {
         width: 80%;
     }
 }

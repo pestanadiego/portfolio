@@ -109,15 +109,17 @@ function showSkills(skills) {
 
 // Form action
 form.addEventListener('submit', () => {
-        if(!(email.value.includes('@'))) {
-            alert('Uno de sus datos no ha sido ingresado correctamente. Inténtelo de nuevo');
-        } else {
-            console.log(`
-            Nombre: ${form.elements['name'].value}
-            Apellido: ${surname.value}
-            Correo electrónico: ${email.value}
-            Mensaje: ${message.value}
-            `);
-            alert('Su solicitud ha sido enviada');
-        }
+    const valid = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+    isGood = email.value.match(valid);
+    if(!isGood) {
+        alert('Uno de sus datos no ha sido ingresado correctamente. Inténtelo de nuevo');
+    } else {
+        console.log(`
+        Nombre: ${form.elements['name'].value}
+        Apellido: ${surname.value}
+        Correo electrónico: ${email.value}
+        Mensaje: ${message.value}
+        `);
+        alert('Su solicitud ha sido enviada');
+    }
 });
